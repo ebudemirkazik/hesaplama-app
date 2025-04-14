@@ -2,6 +2,23 @@ document.getElementById("hesapla").addEventListener("click", () => {
   // Hesaplama kodları
   const toplamaInput = document.getElementById("toplama");
   const toplama = parseInt(toplamaInput.value);
+  const ugramaInput = document.getElementById("ugrama");
+  const ugrama = parseInt(ugramaInput.value);
+
+  if (isNaN(toplama) && isNaN(ugrama)) {
+    alert("Lütfen toplama ve uğrama alanlarını doldurunuz.");
+    return;
+  }
+
+  if (isNaN(toplama)) {
+    alert("Lütfen toplama alanını doldurunuz.");
+    return;
+  }
+
+  if (isNaN(ugrama)) {
+    alert("Lütfen uğrama alanını doldurunuz.");
+    return;
+  }
 
   let toplamUcret = 0;
 
@@ -14,9 +31,6 @@ document.getElementById("hesapla").addEventListener("click", () => {
   } else {
     toplamUcret = 50 * 10.75 + 100 * 7.5 + 350 * 3 + (toplama - 500) * 1.7;
   }
-
-  const ugramaInput = document.getElementById("ugrama");
-  const ugrama = parseInt(ugramaInput.value);
 
   let ugramaUcret = 0;
 
