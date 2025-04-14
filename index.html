@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hakediş Hesaplama</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="input-div">
+        <label for="toplama" class="top-label"
+          >Topladığın Adet: <input min="0" type="number" id="toplama"
+        /></label>
+        <label for="ugrama" class="ugra-label"
+          >Uğradığın Tedarikçi: <input min="0" type="number" id="ugrama"
+        /></label>
+      </div>
+      
+      <div class="button-div">
+        <button id="hesapla">HESAPLA</button>
+        <button id="reset">RESET</button>
+      </div>
+
+      <div class="sonuc" id="toplama-fiyat"></div>
+      <div class="sonuc" id="ugrama-fiyat"></div>
+      <div class="sonuc" id="kdv-haric-sonuc"></div>
+      <div class="sonuc" id="kdv-fiyat"></div>
+      <div class="sonuc" id="kdv-dahil-sonuc"></div>
+    </div>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>

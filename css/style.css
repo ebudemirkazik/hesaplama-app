@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #ccc;
+}
+
+.container {
+  position: fixed; /* ekran konumuna göre sabitler */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* tam ortalama sağlar */
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  padding: 20px;
+}
+
+.top-label {
+}
+
+input {
+  padding: 15px;
+  outline: none;
+  font-size: 18px;
+}
+input::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#toplama {
+  margin-left: 24px;
+}
+
+.button-div {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+button {
+  padding: 15px;
+  background-color: #00ff6a;
+  border: none;
+  border-radius: 4px;
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.15s ease-in-out;
+}
+button:active {
+  transform: scale(0.95) translateY(2px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  background-color: #3eee87;
+}
+
+.button-div button:nth-child(2) {
+  background-color: red;
+}
+.button-div button:nth-child(2):hover {
+  background-color: rgb(240, 56, 56);
+}
+
+.sonuc {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-size: 20px;
+  padding: 15px 0;
+  margin: 0 50px;
+  border: solid red 1px;
+  border-radius: 4px;
+  color: black;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
