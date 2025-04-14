@@ -7,17 +7,20 @@ document.getElementById("hesapla").addEventListener("click", () => {
 
   if (isNaN(toplama) && isNaN(ugrama)) {
     alert("Lütfen toplama ve uğrama alanlarını doldurunuz.");
+    
     return;
   }
 
   if (isNaN(toplama)) {
     alert("Lütfen toplama alanını doldurunuz.");
-    return;
+    const randomNumber = Math.floor(Math.random() * 2000) + 1;
+    toplamaInput.value = randomNumber;
   }
 
   if (isNaN(ugrama)) {
     alert("Lütfen uğrama alanını doldurunuz.");
-    return;
+    const randomNumber = Math.floor(Math.random() * 30) + 1;
+    ugramaInput.value = randomNumber;
   }
 
   let toplamUcret = 0;
