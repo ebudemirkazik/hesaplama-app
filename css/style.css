@@ -25,22 +25,20 @@ body {
   padding: 20px;
 }
 
-.top-label {
+.input-div label {
+  
 }
 
 input {
   padding: 15px;
   outline: none;
   font-size: 18px;
+  
 }
 input::-webkit-inner-spin-button,
 ::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
-}
-
-#toplama {
-  margin-left: 24px;
 }
 
 .button-div {
@@ -58,7 +56,6 @@ button {
   font-size: 18px;
   color: white;
   font-weight: bold;
-
   cursor: pointer;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: all 0.15s ease-in-out;
