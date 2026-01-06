@@ -26,23 +26,23 @@ document.getElementById("hesapla").addEventListener("click", () => {
   let toplamUcret = 0;
 
   if (toplama <= 50) {
-    toplamUcret = toplama * 10.75;
+    toplamUcret = toplama * 14;
   } else if (toplama <= 150) {
-    toplamUcret = 50 * 10.75 + (toplama - 50) * 7.5;
+    toplamUcret = 50 * 14 + (toplama - 50) * 9.70;
   } else if (toplama <= 500) {
-    toplamUcret = 50 * 10.75 + 100 * 7.5 + (toplama - 150) * 3;
+    toplamUcret = 50 * 14 + 100 * 9.70 + (toplama - 150) * 3;
   } else {
-    toplamUcret = 50 * 10.75 + 100 * 7.5 + 350 * 3 + (toplama - 500) * 1.7;
+    toplamUcret = 50 * 14 + 100 * 9.70 + 350 * 3.90 + (toplama - 500) * 2.25;
   }
 
   let ugramaUcret = 0;
 
   if (ugrama <= 5) {
-    ugramaUcret = ugrama * 75;
+    ugramaUcret = ugrama * 97.5;
   } else if (ugrama <= 10) {
-    ugramaUcret = 5 * 75 + (ugrama - 5) * 37;
+    ugramaUcret = 5 * 97.5 + (ugrama - 5) * 48;
   } else {
-    ugramaUcret = 5 * 75 + 5 * 37 + (ugrama - 10) * 20.5;
+    ugramaUcret = 5 * 97.5 + 5 * 48 + (ugrama - 10) * 26.75;
   }
 
   const toplam = toplamUcret + ugramaUcret;
