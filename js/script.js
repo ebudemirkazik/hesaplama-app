@@ -30,7 +30,7 @@ document.getElementById("hesapla").addEventListener("click", () => {
   } else if (toplama <= 150) {
     toplamUcret = 50 * 14 + (toplama - 50) * 9.70;
   } else if (toplama <= 500) {
-    toplamUcret = 50 * 14 + 100 * 9.70 + (toplama - 150) * 3;
+    toplamUcret = 50 * 14 + 100 * 9.70 + (toplama - 150) * 3.90;
   } else {
     toplamUcret = 50 * 14 + 100 * 9.70 + 350 * 3.90 + (toplama - 500) * 2.25;
   }
